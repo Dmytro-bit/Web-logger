@@ -33,7 +33,8 @@ class Log(models.Model):
 
 class LogField(models.Model):
     log_name = models.CharField(max_length=100)
-    log_value = models.ForeignKey(Log, on_delete=models.CASCADE)
+    log_value = models.TextField()
+    log = models.ForeignKey(Log, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.log_name
