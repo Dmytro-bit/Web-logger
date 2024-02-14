@@ -65,7 +65,7 @@ media/
 static/
 *.log
 local_settings.py
-db.sqlite3
+web_logger_program/db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
@@ -109,7 +109,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env*
+web_logger_program/.env
 .venv
 env/
 venv/
